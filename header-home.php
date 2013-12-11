@@ -22,21 +22,23 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header-home" role="banner">
-			<a class="logo-link-home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-			<div class="descricao-cabecalho">
-				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-			</div><!-- .descricao-cabecalho -->
-		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'relacoes-raciais' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'relacoes-raciais' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            
+            <div class="logo-acao">
+            	<a href="http://www.acaoeducativa.org" target="_blank"></a>
+            </div><!-- .logo-acao -->
+            
 		</nav><!-- #site-navigation -->
+			
+            <div class="logo-site">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+			</div><!-- .logo-site -->
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
