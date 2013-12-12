@@ -21,6 +21,10 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
+/* =Notes
+--------------------------------------------------------------
+This stylesheet uses rem values with a pixel fallback. The rem
+values (and line heights) are calculated using two variables:
 
 
 /* =Reset
@@ -310,17 +314,14 @@ textarea {
 	width: 98%;
 }
 
-/* Links */
+/* LinksLinks */
 a {
-	color: royalblue;
 }
 a:visited {
-	color: purple;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
 }
 
 /* Alignment */
@@ -415,6 +416,7 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #c2ab99;
 }
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -435,6 +437,7 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+	color: #f2dcc7;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -445,6 +448,7 @@ a:active {
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
+	color: #c2ab99;
 }
 
 /* Small menu */
@@ -467,25 +471,30 @@ a:active {
 .bg-menu {
 	height: 46px;
     width: 100%;
-	background: #423;
+	background: #321a0e;
 	position: absolute;
+	top: 0;
 }
 
 .logo-acao {
-	width: 200px;
-	height: 40px;
+	background: url('images/logo-acao.jpg') no-repeat #321a0e;
+	width: 155px;
+	height: 70px;
 	position: absolute;
 	right: 0;
-	background: #aaa;
 }
 
 .bg-cabecalho {
-	background: none repeat scroll 0 0 #446655;
+	background: url('images/bg-header-home.jpg') repeat-x;
     position: absolute;
 	z-index: -9999999;
-    height: 200px;
+    height: 250px;
     width: 100%;
 	margin-top: 46px;
+}
+
+#masthead {
+	height: 246px;
 }
 
 /* =Content
@@ -642,7 +651,6 @@ object {
 .site {
 	padding: 0 24px;
 	padding: 0 1.714285714rem;
-	background-color: #fff;
 }
 .site-content {
 	margin: 24px 0 0;
@@ -656,10 +664,7 @@ object {
 
 /* =Home
 ----------------------------------------------- */
-
-
 .site-header-home {
-	background: url(images/xxx.jpg) no-repeat #eee;
 	width: 960px;
 	position: relative;
 }
@@ -675,7 +680,16 @@ object {
 	width: 350px;
 	height: 200px;
 	float: left;
-	background: url(images/xxx.jpg) no-repeat #eee
+	background: url(images/xxx.jpg) no-repeat #eee;
+}
+
+.elemento-header-home {
+	background: url("images/sancofa.png") no-repeat scroll 0% 0% transparent;
+	width: 218px;
+	height: 192px;
+	position: absolute;
+	left: -205px;
+	top: 54px;
 }
 
 .colecao-educacao {
@@ -688,17 +702,21 @@ object {
 
 .guias {
 
+
 }
 
 .videos {
+
 
 }
 
 .eixos {
 
+
 }
 
 .caixa-eixo {
+
 
 }
 
@@ -708,6 +726,7 @@ object {
 
 .footer {
 
+
 }
 
 .texto-footer {
@@ -715,5 +734,6 @@ object {
 }
 
 .link-redes-sociais {
+
 
 }

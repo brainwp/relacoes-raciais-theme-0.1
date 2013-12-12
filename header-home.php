@@ -34,7 +34,10 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
   
 		</nav><!-- #site-navigation -->
-		
+
+		<div class="elemento-header-home">
+		</div><!-- .elemento-header-home -->
+
 		<div class="logo-acao">
 			<a href="http://www.acaoeducativa.org" target="_blank"></a>
 		</div><!-- .logo-acao -->
