@@ -78,6 +78,7 @@ function relacoes_raciais_scripts() {
 	wp_enqueue_style( 'relacoes-raciais-style', get_stylesheet_uri() );
 	
 	wp_enqueue_style( 'celulas-theme-style',  get_template_directory_uri() . '/twentytwelve.css' );
+	wp_enqueue_style( 'temporario-style',  get_template_directory_uri() . '/temporario.css' );
 
 	wp_enqueue_script( 'relacoes-raciais-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

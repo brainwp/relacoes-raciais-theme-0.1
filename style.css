@@ -45,10 +45,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+	font-size: 62.5%; 
 }
 body {
 	background: #fff;
@@ -467,6 +464,29 @@ a:active {
 	}
 }
 
+.bg-menu {
+	height: 46px;
+    width: 100%;
+	background: #423;
+	position: absolute;
+}
+
+.logo-acao {
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	background: #aaa;
+}
+
+.bg-cabecalho {
+	background: none repeat scroll 0 0 #446655;
+    position: absolute;
+	z-index: -9999999;
+    height: 200px;
+    width: 100%;
+	margin-top: 46px;
+}
 
 /* =Content
 ----------------------------------------------- */
@@ -641,6 +661,7 @@ object {
 .site-header-home {
 	background: url(images/xxx.jpg) no-repeat #eee;
 	width: 960px;
+	position: relative;
 }
 
 .descricao-cabecalho {

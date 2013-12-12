@@ -5,7 +5,7 @@ Template Name: Home
 
 get_header('home'); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary-home" class="content-area">
 		<main id="main" class="site-main" role="main">
         
         <div class="slider-menu-home">
@@ -26,19 +26,37 @@ get_header('home'); ?>
         
         <div class="subcontent-cartazes">
         
-        	<div class="intro-cartazes-home">
-            </div><!-- .intro-cartazes-home -->
+        <div class="">
+        </div><!-- . -->
+        
+        <div class="esquerda-subcontent-cartazes">
+        <h1>Relações Educação</h1>
+        
+        <div class="content-esquerda-subcontent-cartazes">
+        
+		<div class="intro-cartazes-home">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque risus eget erat venenatis facilisis. Ut semper justo at fermentum fringilla.</p>
+		</div><!-- .intro-cartazes-home -->
         
         	<div class="slider-cartazes-home">
-            </div><!-- .slider-cartazes-home -->
+		</div><!-- .slider-cartazes-home -->
             
-           	<div class="videos-home">
-            </div><!-- .videos-home -->
+	</div><!-- .content-esquerda-subcontent-cartazes -->
+            
+	</div><!-- .esquerda-subcontent-cartazes -->
+	
+	<div class="direita-subcontent-cartazes">
+	
+	<h1>Vídeos</h1>
+	
+		<div class="videos-home">
+		</div><!-- .videos-home -->
+		
+	</div><!-- .direita-subcontent-cartazes -->
         
         </div><!-- .subcontent-cartazes -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

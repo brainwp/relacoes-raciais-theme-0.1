@@ -585,8 +585,6 @@ a:hover {
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	text-align: center;
 }
 .main-navigation li {
@@ -1446,6 +1444,10 @@ img#wpstats {
 		float: left;
 		width: 65.104166667%;
 	}
+	.site-content-home {
+	    width: 100%;
+		overflow: hidden;
+	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
 	body.full-width .site-content {
@@ -1597,10 +1599,8 @@ img#wpstats {
 		background-color: #e6e6e6;
 	}
 	body .site {
-		padding: 0 40px;
-		padding: 0 2.857142857rem;
-		margin-top: 48px;
-		margin-top: 3.428571429rem;
+		/*  padding: 0 40px;
+		padding: 0 2.857142857rem;*/
 		margin-bottom: 48px;
 		margin-bottom: 3.428571429rem;
 		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);

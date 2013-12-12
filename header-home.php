@@ -19,6 +19,10 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="bg-menu"></div><!-- .bg-cabecalho -->
+<div class="bg-cabecalho"></div><!-- .bg-cabecalho -->
+
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header-home" role="banner">
@@ -28,17 +32,17 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'relacoes-raciais' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            
-            <div class="logo-acao">
-            	<a href="http://www.acaoeducativa.org" target="_blank"></a>
-            </div><!-- .logo-acao -->
-            
+  
 		</nav><!-- #site-navigation -->
-			
-            <div class="logo-site">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-			</div><!-- .logo-site -->
+		
+		<div class="logo-acao">
+			<a href="http://www.acaoeducativa.org" target="_blank"></a>
+		</div><!-- .logo-acao -->
+		
+		<div class="logo-site">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+		</div><!-- .logo-site -->
 		
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content-home">
