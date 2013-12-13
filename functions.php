@@ -41,6 +41,7 @@ jQuery(document).ready(function() {
 </script>
 
 <?php
+
 }
 
 include ( dirname( __FILE__ ) . "/options.php" );

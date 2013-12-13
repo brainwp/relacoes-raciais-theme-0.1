@@ -1,4 +1,4 @@
-ï»¿<?php
+<?php
 /**
  * A unique identifier is defined to store the options in the database and reference them from the theme.
  * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
@@ -40,13 +40,13 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => 'Bloco ColeÃ§Ã£o',
+		'name' => 'Bloco Coleção',
 		'desc' => '',
 		'type' => 'info');
 
 	$options[] = array(
 		'name' => '',
-		'desc' => 'Exibir o Bloco ColeÃ§Ã£o?',
+		'desc' => 'Exibir o Bloco Coleção?',
 		'id' => 'exibir_colecao_checkbox',
 		'std' => '1',
 		'type' => 'checkbox');
@@ -58,21 +58,21 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => 'DescriÃ§Ã£o da ColeÃ§Ã£o na Home',
-		'desc' => 'Essa descriÃ§Ã£o aparece no segundo bloco de informaÃ§Ãµes na Home como introduÃ§Ã£o ao texto da ColeÃ§Ã£o.',
+		'name' => 'Descrição da Coleção na Home',
+		'desc' => 'Essa descrição aparece no segundo bloco de informações na Home como introdução ao texto da Coleção.',
 		'id' => 'colecao_home',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings );
 
 	$options[] = array(
-		'name' => 'Logo da ColeÃ§Ã£o RelaÃ§Ãµes Raciais',
-		'desc' => 'FaÃ§a o upload do logo da ColeÃ§Ã£o RelaÃ§Ãµes Raciais',
+		'name' => 'Logo da Coleção Relações Raciais',
+		'desc' => 'Faça o upload do logo da Coleção Relações Raciais',
 		'id' => 'logo_colecao_upload',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => 'Link do logo de EducaÃ§Ã£o e RelaÃ§Ãµes Raciais',
-		'desc' => 'Selecione o link para o logo da EducaÃ§Ã£o e EducaÃ§Ãµes Raciais.',
+		'name' => 'Link do logo de Educação e Relações Raciais',
+		'desc' => 'Selecione o link para o logo da Educação e Educações Raciais.',
 		'id' => 'link_colecao',
 		'type' => 'select',
 		'options' => $options_pages);
@@ -91,7 +91,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => 'Capa do Indiques',
-		'desc' => 'FaÃ§a o upload da capa do Indiques. As medidas devem obedecer a seguinte proporÃ§Ã£o: 200x270px',
+		'desc' => 'Faça o upload da capa do Indiques. As medidas devem obedecer a seguinte proporção: 200x270px',
 		'id' => 'capa_indiques_upload',
 		'type' => 'upload');
 
@@ -103,7 +103,7 @@ function optionsframework_options() {
 		'options' => $options_pages);
 
 	$options[] = array(
-		'name' => 'RodapÃ©',
+		'name' => 'Rodapé',
 		'type' => 'heading');
 
 	return $options;
