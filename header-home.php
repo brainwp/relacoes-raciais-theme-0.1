@@ -42,9 +42,10 @@
 			<a href="http://www.acaoeducativa.org" target="_blank"></a>
 		</div><!-- .logo-acao -->
 		
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 		<div class="logo-site">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 		</div><!-- .logo-site -->
+        </a>
 		
 	</header><!-- #masthead -->
 

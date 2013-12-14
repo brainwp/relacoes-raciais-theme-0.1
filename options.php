@@ -76,19 +76,7 @@ function optionsframework_options() {
 		'id' => 'link_colecao',
 		'type' => 'select',
 		'options' => $options_pages);
-
-	$options[] = array(
-		'name' => 'Bloco Cartazes',
-		'desc' => '',
-		'type' => 'info');
-
-	$options[] = array(
-		'name' => '',
-		'desc' => 'Exibir o Bloco Cartazes?',
-		'id' => 'exibir_cartazes_checkbox',
-		'std' => '1',
-		'type' => 'checkbox');
-
+	
 	$options[] = array(
 		'name' => 'Capa do Indiques',
 		'desc' => 'Faça o upload da capa do Indiques. As medidas devem obedecer a seguinte proporção: 200x270px',
@@ -103,8 +91,37 @@ function optionsframework_options() {
 		'options' => $options_pages);
 
 	$options[] = array(
-		'name' => 'Rodapé',
-		'type' => 'heading');
+		'name' => 'Bloco Cartazes',
+		'desc' => '',
+		'type' => 'info');
+
+	$options[] = array(
+		'name' => '',
+		'desc' => 'Exibir o Bloco Cartazes?',
+		'id' => 'exibir_cartazes_checkbox',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => 'Link para Página dos Cartazes',
+		'desc' => 'Selecione o link para a página dos Cartazes.',
+		'id' => 'link_cartazes',
+		'type' => 'select',
+		'options' => $options_pages);
+	
+	$options[] = array(
+		'name' => 'Descrição dos Cartazes',
+		'desc' => 'Essa descrição aparece no terceiro bloco de informações na Home como introdução ao slider de Cartazes.',
+		'id' => 'cartazes_home',
+		'type' => 'editor',
+		'settings' => $wp_editor_settings );
+
+	$options[] = array(
+		'name' => 'Frase para o Rodapé',
+		'desc' => 'Adicione uma frase para ser exibida no rodapé do site',
+		'id' => 'frase_rodape',
+		'std' => 'Default Value',
+		'type' => 'text');
 
 	return $options;
 }

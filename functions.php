@@ -109,6 +109,14 @@ function relacoes_raciais_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'relacoes-raciais' ),
+		'id'            => 'sidebar-footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'relacoes_raciais_widgets_init' );
 
@@ -122,6 +130,8 @@ function relacoes_raciais_scripts() {
 	wp_enqueue_style( 'temporario-style',  get_template_directory_uri() . '/temporario.css' );
 
 	wp_enqueue_script( 'relacoes-raciais-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'caroufredsel', get_template_directory_uri() . '/js/jquery.carouFredSel-6.1.0-packed.js', array('jquery') );
+    wp_enqueue_script( 'caroufredsel_pre', get_template_directory_uri() . '/js/caroufredsel_pre.js', array('caroufredsel') );
 
 	wp_enqueue_script( 'relacoes-raciais-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
