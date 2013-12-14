@@ -86,7 +86,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => 'Link da capa do Indiques',
 		'desc' => 'Selecione o link para a capa do Indiques.',
-		'id' => 'link_cartazes',
+		'id' => 'link_indiques',
 		'type' => 'select',
 		'options' => $options_pages);
 

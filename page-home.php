@@ -33,7 +33,12 @@ get_header('home'); ?>
             </div><!-- .logo-relacoes-home -->
             
             <div class="indiques-relacoes-home">
-				<a href="<?php echo of_get_option('link_indiques'); ?>">
+            
+            <?php
+				$id_indiques = of_get_option('link_indiques');
+				$link_indiques = get_permalink( $id_indiques ); 
+			?>
+				<a href="<?php echo $link_indiques; ?>">
 					<img src="<?php echo of_get_option('capa_indiques_upload'); ?>" />
 				</a>				
             </div><!-- .indiques-relacoes-home -->
