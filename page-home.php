@@ -19,7 +19,11 @@ get_header('home'); ?>
         
         	<div class="intro-relacoes-home">
 				<?php echo of_get_option('colecao_home'); ?><br />
-				<a href="<?php echo of_get_option('link_colecao'); ?>">Leia mais>></a>
+			<?php
+				$id_intro = of_get_option('link_colecao');
+				$link_intro = get_permalink( $id_intro ); 
+			?>
+				<a href="<?php echo $link_intro; ?>">Leia mais>></a>
             </div><!-- .intro-relacoes-home -->
             
             <div class="logo-relacoes-home">
@@ -54,7 +58,12 @@ get_header('home'); ?>
         
 		<div class="intro-cartazes-home">
 			<?php echo of_get_option('cartazes_home'); ?><br />
-	            <a href="<?php echo of_get_option('link_cartazes'); ?>">Leia mais>></a>
+            
+            <?php
+				$id_cartazes = of_get_option('link_cartazes');
+				$link_cartazes = get_permalink( $id_cartazes ); 
+			?>
+	            <a href="<?php echo $link_cartazes; ?>">Leia mais>></a>
 		</div><!-- .intro-cartazes-home -->
         
 		<div class="slider-cartazes-home">
