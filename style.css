@@ -314,14 +314,17 @@ textarea {
 	width: 98%;
 }
 
-/* LinksLinks */
+/* Links */
 a {
+	color: #491b07;
 }
 a:visited {
+	color: #230d03;
 }
 a:hover,
 a:focus,
 a:active {
+	color: #230d03;
 }
 
 /* Alignment */

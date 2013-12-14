@@ -27,7 +27,7 @@ get_header('home'); ?>
             </div><!-- .intro-relacoes-home -->
             
             <div class="logo-relacoes-home">
-				<a href="<?php echo of_get_option('link_colecao'); ?>">
+				<a href="<?php echo $link_intro; ?>">
 					<img src="<?php echo of_get_option('logo_colecao_upload'); ?>" />
 				</a>
             </div><!-- .logo-relacoes-home -->
@@ -128,6 +128,11 @@ get_header('home'); ?>
 	<h1 class="entry-title">Vídeos</h1>
 	
 		<div class="videos-home">
+			<ul>
+              <?php
+              if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-videos') ) :
+              endif; ?>
+           </ul>
 		</div><!-- .videos-home -->
 		
 	</div><!-- .direita-subcontent-cartazes -->
