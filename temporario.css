@@ -369,6 +369,35 @@ ul#carousel li .content.center {
 }
 
 
+.pagina-interna {
+	background: url("images/bg-page.png") transparent;
+	min-height: 688px;
+}
+
+.entry-header .entry-title {
+	font-size: 50px;
+	line-height: 1;
+	font-weight: bold;
+	color: #231109;
+}
+
+.entry-content {
+	padding: 30px;
+	font-size: 15px;
+	color: #231109;
+}
+
+.elemento-page {
+	width: 1000px;
+    background: url("images/elemento-page.png") no-repeat scroll 0 0 transparent;
+    height: 932px;
+    left: -50px;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+	z-index: -1111;
+}
+
 /* SLIDER */
 
 .direita-subcontent-cartazes {
