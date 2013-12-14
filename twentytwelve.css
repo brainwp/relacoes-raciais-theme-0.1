@@ -1432,6 +1432,7 @@ img#wpstats {
 	.site-content-home {
 	    width: 100%;
 		overflow: hidden;
+		margin: -20px 0 0 0;
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,

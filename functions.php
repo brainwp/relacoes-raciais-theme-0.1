@@ -132,6 +132,10 @@ function relacoes_raciais_scripts() {
 	wp_enqueue_script( 'relacoes-raciais-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'caroufredsel', get_template_directory_uri() . '/js/jquery.carouFredSel-6.1.0-packed.js', array('jquery') );
     wp_enqueue_script( 'caroufredsel_pre', get_template_directory_uri() . '/js/caroufredsel_pre.js', array('caroufredsel') );
+    wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array('jquery') );
+    wp_enqueue_script( 'jquery-easing-compatibility', get_template_directory_uri() . '/js/jquery.easing.compatibility.js', array('jquery') );
+    wp_enqueue_script( 'kwicks', get_template_directory_uri() . '/js/jquery.kwicks-1.5.1.pack.js', array('jquery') );
+	wp_enqueue_script( 'easing_pre', get_template_directory_uri() . '/js/easing_pre.js', array('jquery') );
 
 	wp_enqueue_script( 'relacoes-raciais-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -164,3 +168,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_filter('show_admin_bar', '__return_false'); 
