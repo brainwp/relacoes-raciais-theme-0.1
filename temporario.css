@@ -374,11 +374,20 @@ ul#carousel li .content.center {
 	min-height: 688px;
 }
 
+.pagina-404 {
+	min-height: 688px;
+}
+
+
 .entry-header .entry-title {
 	font-size: 50px;
 	line-height: 1;
 	font-weight: bold;
 	color: #231109;
+}
+
+.center {
+	text-align: center;
 }
 
 .entry-content {

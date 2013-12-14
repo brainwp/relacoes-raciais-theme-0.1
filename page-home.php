@@ -48,7 +48,7 @@ get_header('home'); ?>
         </div><!-- . -->
         
         <div class="esquerda-subcontent-cartazes">
-        <h1>Relações Educação</h1>
+        <h1 class="entry-title">Relações Educação</h1>
         
         <div class="content-esquerda-subcontent-cartazes">
         
@@ -58,11 +58,7 @@ get_header('home'); ?>
 		</div><!-- .intro-cartazes-home -->
         
 		<div class="slider-cartazes-home">
-        
-        
-        
-        
-        
+                
         
         <div class="slider">
 
@@ -108,16 +104,7 @@ get_header('home'); ?>
  				<div class="clearfix"></div>
 					
 			</div> <!-- .list_carrousel -->
-            </div><!-- .slider. -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            </div><!-- .slider. -->      
         
         
         
@@ -129,7 +116,7 @@ get_header('home'); ?>
 	
 	<div class="direita-subcontent-cartazes">
 	
-	<h1>Vídeos</h1>
+	<h1 class="entry-title">Vídeos</h1>
 	
 		<div class="videos-home">
 		</div><!-- .videos-home -->

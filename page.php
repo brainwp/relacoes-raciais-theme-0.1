@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-					<header class="entry-header">
+					<header class="entry-header center">
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                     </header><!-- .entry-header -->
 
