@@ -37,10 +37,11 @@
 
 		<div class="elemento-header-home">
 		</div><!-- .elemento-header-home -->
-
-		<div class="logo-acao">
-			<a href="http://www.acaoeducativa.org" target="_blank"></a>
-		</div><!-- .logo-acao -->
+		
+        <a href="http://www.acaoeducativa.org" target="_blank">
+            <div class="logo-acao">
+            </div><!-- .logo-acao -->
+       	</a>
 		
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 		<div class="logo-site">
