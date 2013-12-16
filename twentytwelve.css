@@ -1459,6 +1459,7 @@ img#wpstats {
 	.main-navigation li {
 		display: inline-block;
 		text-decoration: none;
+		font-weight: bold;
 	}
 	.main-navigation li a {
 		border-bottom: 0;

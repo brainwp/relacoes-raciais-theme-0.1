@@ -40,16 +40,23 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => 'Bloco Coleção',
+		'name' => 'Bloco ColeÃ§Ã£o',
 		'desc' => '',
 		'type' => 'info');
 
 	$options[] = array(
 		'name' => '',
-		'desc' => 'Exibir o Bloco Coleção?',
+		'desc' => 'Exibir o Bloco ColeÃ§Ã£o?',
 		'id' => 'exibir_colecao_checkbox',
 		'std' => '1',
 		'type' => 'checkbox');
+	
+	$options[] = array(
+		'name' => 'TÃ­tulo de Boas Vindas',
+		'desc' => 'Adicione um tÃ­tulo de Boas Vindas.',
+		'id' => 'titulo_boas',
+		'std' => 'Boas Vindas',
+		'type' => 'text');
 
 	$wp_editor_settings = array(
 		'wpautop' => true, // Default
@@ -58,28 +65,28 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => 'Descrição da Coleção na Home',
-		'desc' => 'Essa descrição aparece no segundo bloco de informações na Home como introdução ao texto da Coleção.',
+		'name' => 'DescriÃ§Ã£o da ColeÃ§Ã£o na Home',
+		'desc' => 'Essa descriÃ§Ã£o aparece no segundo bloco de informaÃ§Ãµes na Home como introduÃ§Ã£o ao texto da ColeÃ§Ã£o.',
 		'id' => 'colecao_home',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings );
 
 	$options[] = array(
-		'name' => 'Logo da Coleção Relações Raciais',
-		'desc' => 'Faça o upload do logo da Coleção Relações Raciais',
+		'name' => 'Logo da ColeÃ§Ã£o RelaÃ§Ãµes Raciais',
+		'desc' => 'FaÃ§a o upload do logo da ColeÃ§Ã£o RelaÃ§Ãµes Raciais',
 		'id' => 'logo_colecao_upload',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => 'Link do logo de Educação e Relações Raciais',
-		'desc' => 'Selecione o link para o logo da Educação e Educações Raciais.',
+		'name' => 'Link do logo de EducaÃ§Ã£o e RelaÃ§Ãµes Raciais',
+		'desc' => 'Selecione o link para o logo da EducaÃ§Ã£o e EducaÃ§Ãµes Raciais.',
 		'id' => 'link_colecao',
 		'type' => 'select',
 		'options' => $options_pages);
 	
 	$options[] = array(
 		'name' => 'Capa do Indiques',
-		'desc' => 'Faça o upload da capa do Indiques. As medidas devem obedecer a seguinte proporção: 200x270px',
+		'desc' => 'FaÃ§a o upload da capa do Indiques. As medidas devem obedecer a seguinte proporÃ§Ã£o: 200x270px',
 		'id' => 'capa_indiques_upload',
 		'type' => 'upload');
 
@@ -103,22 +110,22 @@ function optionsframework_options() {
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => 'Link para Página dos Cartazes',
-		'desc' => 'Selecione o link para a página dos Cartazes.',
+		'name' => 'Link para PÃ¡gina dos Cartazes',
+		'desc' => 'Selecione o link para a pÃ¡gina dos Cartazes.',
 		'id' => 'link_cartazes',
 		'type' => 'select',
 		'options' => $options_pages);
 	
 	$options[] = array(
-		'name' => 'Descrição dos Cartazes',
-		'desc' => 'Essa descrição aparece no terceiro bloco de informações na Home como introdução ao slider de Cartazes.',
+		'name' => 'DescriÃ§Ã£o dos Cartazes',
+		'desc' => 'Essa descriÃ§Ã£o aparece no terceiro bloco de informaÃ§Ãµes na Home como introduÃ§Ã£o ao slider de Cartazes.',
 		'id' => 'cartazes_home',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings );
 
 	$options[] = array(
-		'name' => 'Frase para o Rodapé',
-		'desc' => 'Adicione uma frase para ser exibida no rodapé do site',
+		'name' => 'Frase para o RodapÃ©',
+		'desc' => 'Adicione uma frase para ser exibida no rodapÃ© do site',
 		'id' => 'frase_rodape',
 		'std' => 'Default Value',
 		'type' => 'text');

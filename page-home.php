@@ -18,6 +18,7 @@ get_header('home'); ?>
         <div class="subcontent-relacoes">
         
         	<div class="intro-relacoes-home">
+            <h1 class="entry-title"><?php echo of_get_option('titulo_boas'); ?></h1>
 				<?php echo of_get_option('colecao_home'); ?><br />
 			<?php
 				$id_intro = of_get_option('link_colecao');
@@ -57,7 +58,7 @@ get_header('home'); ?>
         </div><!-- . -->
         
         <div class="esquerda-subcontent-cartazes">
-        <h1 class="entry-title">Relações Educação</h1>
+        <h1 class="entry-title">Afro-brasilidades em Imagens</h1>
         
         <div class="content-esquerda-subcontent-cartazes">
         
