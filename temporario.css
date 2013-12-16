@@ -418,7 +418,7 @@ ul#carousel li .content.center {
     width: 250px;
 }
 
-.direita-subcontent-cartazes .entry-title {
+.direita-subcontent-cartazes .widget-title {
 	font-size: 35px;
 	line-height: 1;
 	font-weight: bold;
@@ -426,24 +426,33 @@ ul#carousel li .content.center {
 	margin: 20px 0 10px 30px;
 }
 
+ul.mechabyte-youtube-videos li {
+    margin: 5px auto 0 !important;
+    max-width: 194px !important;
+}
+
 .bg-footer {
-    background: none repeat scroll 0 0 #231109;
-    height: 123px;
-    margin: -123px 0 0;
+	background: none repeat scroll 0 0 #231109;
+    height: 120px;
+    margin: -100px 0 0;
     position: absolute;
     width: 100%;
     z-index: -9;
+}
+
+#wpstats {
+	display: none !important;
 }
 
 #colophon {
 	color: #f2dcc7;
 	min-height: 70px;
 	width: 100%;
+	margin: 40px 0 0 0;
 }
 
 .frase-rodape {
-	width: 30%;
-	max-width: 400px;
+	max-width: 600px;
 	height: 50px;
 	float: left;
 	margin: 25px 0 0 0;

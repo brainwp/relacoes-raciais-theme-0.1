@@ -182,7 +182,6 @@ img {
 /* Small headers */
 .archive-title,
 .page-title,
-.widget-title,
 .entry-content th,
 .comment-content th {
 	font-size: 11px;
@@ -199,7 +198,7 @@ article.format-link footer.entry-meta,
 article.format-status footer.entry-meta {
 	font-size: 11px;
 	font-size: 0.785714286rem;
-	line-height: 2.181818182;
+	/*line-height: 2.181818182;*/
 }
 
 /* Form fields, general styles first */
@@ -648,13 +647,9 @@ footer[role="contentinfo"] {
 	font-size: 0.857142857rem;
 	line-height: 2;
 	max-width: 960px;
-	max-width: 68.571428571rem;
 	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
 }
 footer[role="contentinfo"] a {
 	color: #686868;

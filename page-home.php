@@ -131,8 +131,6 @@ get_header('home'); ?>
 	
 	<div class="direita-subcontent-cartazes">
 	
-	<h1 class="entry-title">Vídeos</h1>
-	
 		<div class="videos-home">
 			<ul>
               <?php

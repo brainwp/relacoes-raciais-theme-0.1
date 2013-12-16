@@ -702,7 +702,7 @@ object {
 }
 
 .elemento-header-home {
-	background: url("images/sancofa.png") no-repeat fixed 110px 74px transparent;
+	background: url("images/sancofa.png") no-repeat scroll 0 0 transparent;
     height: 192px;
     left: -205px;
     position: absolute;
