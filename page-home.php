@@ -23,11 +23,16 @@ get_header('home'); ?>
 			<?php
 				$id_intro = of_get_option('link_colecao');
 				$link_intro = get_permalink( $id_intro ); 
+<<<<<<< HEAD
 				
 				$id_quem = of_get_option('link_quem');
 				$link_quem = get_permalink( $id_quem ); 
 			?>
 				<a href="<?php echo $link_quem; ?>">Leia mais>></a>
+=======
+			?>
+				<a href="<?php echo $link_intro; ?>">Leia mais>></a>
+>>>>>>> 6bac80e80c920a0207aa8ba325029e254b5c95b9
             </div><!-- .intro-relacoes-home -->
             
             <div class="logo-relacoes-home">
