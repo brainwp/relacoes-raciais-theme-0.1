@@ -52,7 +52,7 @@ html {
 	font-size: 62.5%; 
 }
 body {
-	background: #fff;
+	background: url('images/bg.jpg');
 }
 article,
 aside,
@@ -314,14 +314,17 @@ textarea {
 	width: 98%;
 }
 
-/* LinksLinks */
+/* Links */
 a {
+	color: #491b07;
 }
 a:visited {
+	color: #230d03;
 }
 a:hover,
 a:focus,
 a:active {
+	color: #230d03;
 }
 
 /* Alignment */
@@ -485,10 +488,10 @@ a:active {
 }
 
 .bg-cabecalho {
-	background: url('images/bg-header-home.jpg') repeat-x;
+	background: url('images/bg-header-home.jpg') 0 0 repeat-x fixed;
     position: absolute;
 	z-index: -9999999;
-    height: 250px;
+    height: 220px;
     width: 100%;
 	margin-top: 46px;
 }
@@ -496,6 +499,21 @@ a:active {
 #masthead {
 	height: 246px;
 }
+
+.site-navigation {
+	overflow: hidden;
+}
+
+.logo-site {
+    background: url("images/titulo-site.png") no-repeat scroll 0 0 transparent;
+    height: 49px;
+    left: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 110px;
+    width: 762px;
+}
+
 
 /* =Content
 ----------------------------------------------- */
@@ -684,12 +702,12 @@ object {
 }
 
 .elemento-header-home {
-	background: url("images/sancofa.png") no-repeat scroll 0% 0% transparent;
-	width: 218px;
-	height: 192px;
-	position: absolute;
-	left: -205px;
-	top: 54px;
+	background: url("images/sancofa.png") no-repeat scroll 0 0 transparent;
+    height: 192px;
+    left: -205px;
+    position: absolute;
+    top: 74px;
+    width: 218px;
 }
 
 .colecao-educacao {

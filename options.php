@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * A unique identifier is defined to store the options in the database and reference them from the theme.
  * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
@@ -50,6 +50,13 @@ function optionsframework_options() {
 		'id' => 'exibir_colecao_checkbox',
 		'std' => '1',
 		'type' => 'checkbox');
+	
+	$options[] = array(
+		'name' => 'Título de Boas Vindas',
+		'desc' => 'Adicione um título de Boas Vindas.',
+		'id' => 'titulo_boas',
+		'std' => 'Boas Vindas',
+		'type' => 'text');
 
 	$wp_editor_settings = array(
 		'wpautop' => true, // Default
@@ -63,6 +70,13 @@ function optionsframework_options() {
 		'id' => 'colecao_home',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings );
+	
+	$options[] = array(
+		'name' => 'Link para Página Quem Somos',
+		'desc' => 'Selecione o link para a página que complementa essa Introdução.',
+		'id' => 'link_quem',
+		'type' => 'select',
+		'options' => $options_pages);
 
 	$options[] = array(
 		'name' => 'Logo da Coleção Relações Raciais',
@@ -74,6 +88,19 @@ function optionsframework_options() {
 		'name' => 'Link do logo de Educação e Relações Raciais',
 		'desc' => 'Selecione o link para o logo da Educação e Educações Raciais.',
 		'id' => 'link_colecao',
+		'type' => 'select',
+		'options' => $options_pages);
+	
+	$options[] = array(
+		'name' => 'Capa do Indiques',
+		'desc' => 'Faça o upload da capa do Indiques. As medidas devem obedecer a seguinte proporção: 200x270px',
+		'id' => 'capa_indiques_upload',
+		'type' => 'upload');
+
+	$options[] = array(
+		'name' => 'Link da capa do Indiques',
+		'desc' => 'Selecione o link para a capa do Indiques.',
+		'id' => 'link_indiques',
 		'type' => 'select',
 		'options' => $options_pages);
 
@@ -90,21 +117,25 @@ function optionsframework_options() {
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => 'Capa do Indiques',
-		'desc' => 'Faça o upload da capa do Indiques. As medidas devem obedecer a seguinte proporção: 200x270px',
-		'id' => 'capa_indiques_upload',
-		'type' => 'upload');
-
-	$options[] = array(
-		'name' => 'Link da capa do Indiques',
-		'desc' => 'Selecione o link para a capa do Indiques.',
+		'name' => 'Link para Página dos Cartazes',
+		'desc' => 'Selecione o link para a página dos Cartazes.',
 		'id' => 'link_cartazes',
 		'type' => 'select',
 		'options' => $options_pages);
+	
+	$options[] = array(
+		'name' => 'Descrição dos Cartazes',
+		'desc' => 'Essa descrição aparece no terceiro bloco de informações na Home como introdução ao slider de Cartazes.',
+		'id' => 'cartazes_home',
+		'type' => 'editor',
+		'settings' => $wp_editor_settings );
 
 	$options[] = array(
-		'name' => 'Rodapé',
-		'type' => 'heading');
+		'name' => 'Frase para o Rodapé',
+		'desc' => 'Adicione uma frase para ser exibida no rodapé do site',
+		'id' => 'frase_rodape',
+		'std' => 'Default Value',
+		'type' => 'text');
 
 	return $options;
 }
